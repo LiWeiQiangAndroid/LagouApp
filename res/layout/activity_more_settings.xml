@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F5"
+    tools:context=".MoreSettingsActivity" >
+
+    <include
+        android:id="@+id/headerview"
+        layout="@layout/headerview_layout" />
+
+    <TextView
+        android:id="@+id/tv_setting_news"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/headerview"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="消息设置" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_setting_news"
+        android:paddingLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+
+    <TextView
+        android:id="@+id/tv_setting_cache"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_setting_news"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="清除缓存" />
+
+    <TextView
+        android:id="@+id/tv_setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_setting_cache"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="关于软件" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_setting_about"
+        android:paddingLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+
+    <TextView
+        android:id="@+id/tv_setting_xieyi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_setting_about"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="用户协议" />
+    
+    <TextView
+        android:id="@+id/tv_setting_gengxin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_setting_xieyi"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="检查更新" />
+
+    <TextView
+        android:id="@+id/tv_setting_qy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_setting_gengxin"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="切换到企业版" />
+
+    <Button
+        android:id="@+id/tv_setting_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_setting_qy"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center|center"
+        android:text="登录账号"
+        android:textColor="#FF7654" />
+
+</RelativeLayout>

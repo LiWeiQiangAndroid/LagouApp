@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/four_screen_bg"
+    
+      >
+<!-- 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/headerview"
+            layout="@layout/headerview_layout" />
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_txt4"
+                android:gravity="center"
+                android:textColor="#F0F0F0"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Register_Input"
+            android:background="@drawable/button_shape_reg" >
+
+            <TextView
+                style="@style/Smile.TextView._Black"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/register_margin"
+                android:paddingStart="@dimen/register_margin"
+                android:text="@string/email_account"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/et_com_username"
+                style="@style/Register_Edit"
+                android:hint="@string/login_username_reg"
+                android:textColorHint="#686867"
+                android:textStyle="italic"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Register_Input"
+            android:background="@drawable/button_shape_reg" >
+
+            <TextView
+                style="@style/Smile.TextView._Black"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/register_margin"
+                android:paddingStart="@dimen/register_margin"
+                android:text="@string/login_pwd"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/et_com_password"
+                style="@style/Register_Edit"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword" 
+                android:textColorHint="#686867"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Register_Input"
+            android:background="@drawable/button_shape_reg" >
+
+            <TextView
+                style="@style/Smile.TextView._Black"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/register_margin"
+                android:paddingStart="@dimen/register_margin"
+                android:text="@string/login_email"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/et_com_repassword"
+                style="@style/Register_Edit"
+                android:hint="@string/login_email_hint"
+                android:inputType="textPassword"
+                android:textColorHint="#686867"
+                android:textStyle="italic"
+                 />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_hrregister"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_shape"
+            android:text="@string/register"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+</LinearLayout>

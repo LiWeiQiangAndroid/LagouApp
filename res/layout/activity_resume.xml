@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F5"
+    android:orientation="vertical" >
+    
+	<include
+	    android:id="@+id/headerview"
+	      layout="@layout/headerview_layout"/>
+    <RelativeLayout
+        android:id="@+id/r_jl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/tv_lagou_zxjl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_toRightOf="@+id/iv_lagou_jl"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="简历" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="55dp"
+        android:paddingRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+    <RelativeLayout
+        android:id="@+id/r_fjjl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+
+         
+        
+        <TextView
+            android:id="@+id/tv_lagou_fjjl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_toRightOf="@+id/iv_lagou_jl"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="附件简历" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="55dp"
+        android:paddingRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+    <RelativeLayout
+        android:id="@+id/r_xxmrlj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/tv_lagou_xxmrlj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_toRightOf="@+id/iv_lagou_jl"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="选择默认简历" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#F3F3F3"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F7F7F8"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/rb_tab_menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/selector_home"
+            android:gravity="center|center"
+            android:text="首页"
+            android:textColor="@drawable/selector_tab_menu_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_menu_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/selector_news"
+            android:gravity="center|center"
+            android:text="消息"
+            android:textColor="@drawable/selector_tab_menu_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_menu_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/selector_find"
+            android:gravity="center|center"
+            android:text="发现"
+            android:textColor="@drawable/selector_tab_menu_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_menu_my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/selector_my"
+            android:gravity="center|center"
+            android:text="我"
+            android:textColor="@drawable/selector_tab_menu_text_color" />
+    </RadioGroup>
+
+</RelativeLayout>

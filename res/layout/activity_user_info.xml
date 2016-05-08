@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tedu.lagou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/headerview"
+        layout="@layout/headerview_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <com.tedu.lagou.view.CircleImageView
+            android:id="@+id/iv_userinfo_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher"
+            app:border_color="#FFFFFF"
+            app:border_width="2dp" />
+
+        <ImageView
+            android:id="@+id/iv_userinfo_avatar_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_userinfo_avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_userinfo_avatar"
+            android:src="@drawable/edit_pencil" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="昵称"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_userinfo_nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="XXXXXXX"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_userinfo_edit_nickname_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_userinfo_nickname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:hint="请输入新昵称...."
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_userinfo_nickname_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_blue_selector"
+                android:padding="5dp"
+                android:text="确认"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@+id/btn_userinfo_nickname_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_red_selector"
+                android:padding="5dp"
+                android:text="取消"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_userinfo_nickname_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/edit_pencil" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="账号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_userinfo_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="XXXXXXX"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_userinfo_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_blue_selector"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="更新资料"
+            android:textColor="#ffffffff"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

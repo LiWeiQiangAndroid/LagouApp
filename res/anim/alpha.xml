@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 
+    【Alpha动画的核心属性】
+	fromAlpha / toAlpha：从/到什么样的透明度，取值为float类型，取值范围为0~1，其中0表示完全透明，1表示完全不透明
+		【Rotate动画的核心属性】 -->
+    <alpha 
+        android:fromAlpha="0"
+        android:toAlpha="0.8"
+        android:duration="10000"
+        
+        />
+
+</set>

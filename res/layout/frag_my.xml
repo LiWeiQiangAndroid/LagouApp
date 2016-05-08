@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tedu.lagou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:background="@drawable/lagou_loginorregist"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="职场从来没有过客"
+            android:textColor="#FFFFFF" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/tv_my_login"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:text="登录/注册"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible" />
+
+            <com.tedu.lagou.view.CircleImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_launcher"
+                android:visibility="invisible"
+                app:border_color="#CA938C"
+                app:border_width="2dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:text="用户名"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+
+    <RelativeLayout
+        android:id="@+id/r_jl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/iv_lagou_jl"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/drawer_menu_icon_blog_nor" />
+
+        <TextView
+            android:id="@+id/tv_lagou_jl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/iv_lagou_jl"
+            android:text="简历" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="55dp"
+        android:paddingRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+
+    <RelativeLayout
+        android:id="@+id/r_plus"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/iv_lagou_plus"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/drawer_menu_icon_quest_nor" />
+
+        <TextView
+            android:id="@+id/tv_lagou_plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/iv_lagou_plus"
+            android:text="PLUS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/tv_lagou_plus"
+            android:layout_alignBottom="@+id/tv_lagou_plus"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="未开启"
+            android:textColor="#2CB044"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="55dp"
+        android:paddingRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+
+    <RelativeLayout
+        android:id="@+id/r_sc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/iv_lagou_sc"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_favonot" />
+
+        <TextView
+            android:id="@+id/tv_lagou_sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_lagou_sc"
+            android:gravity="center_vertical"
+            android:text="收藏" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="55dp"
+        android:paddingRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+
+    <RelativeLayout
+        android:id="@+id/r_yjfk"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/iv_lagou_yjfk"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/widget_bar_tweet_nor" />
+
+        <TextView
+            android:id="@+id/tv_lagou_yjfk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_lagou_yjfk"
+            android:gravity="center_vertical"
+            android:text="意见反馈" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="55dp"
+        android:paddingRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+
+    <RelativeLayout
+        android:id="@+id/r_gdsz"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/iv_lagou_gdsz"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/drawer_menu_icon_setting_nor" />
+
+        <TextView
+            android:id="@+id/tv_lagou_gdsz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_lagou_gdsz"
+            android:gravity="center_vertical"
+            android:text="更多设置" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="55dp"
+        android:paddingRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/base_horizontal_line" />
+
+    <RelativeLayout
+        android:id="@+id/r_fbjl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_lagou_fbjl"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_sharesilde" />
+
+        <TextView
+            android:id="@+id/tv_lagou_fbjl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_lagou_fbjl"
+            android:gravity="center_vertical"
+            android:text="发布招聘" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r_wfbd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#F0F1F5"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_lagou_wfbd"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/interview_read_after" />
+
+        <TextView
+            android:id="@+id/tv_lagou_wfbd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_lagou_wfbd"
+            android:gravity="center_vertical"
+            android:text="我发布的招聘" />
+    </RelativeLayout>
+
+</LinearLayout>
